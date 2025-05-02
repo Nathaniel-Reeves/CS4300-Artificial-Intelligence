@@ -1,0 +1,5 @@
+pip
+gymnasium
+pettingzoo
+minigrid
+pettingzoo[clasic]==1.24.3
