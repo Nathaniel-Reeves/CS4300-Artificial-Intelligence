@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+import random
 import gymnasium as gym
 import argparse
 import logging
@@ -11,7 +11,7 @@ from cliff_policy_agent import PolicyAgent
 import policy_search
 
 def create_environment(render_mode, seed, max_episode_steps):
-    env = gym.make('CliffWalking-v0', render_mode=render_mode)
+    env = gym.make('CliffWalking-v0g', render_mode=render_mode)
     if seed:
         env.reset(seed=seed)
     if max_episode_steps:
